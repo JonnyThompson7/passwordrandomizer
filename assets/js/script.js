@@ -95,14 +95,13 @@ function generatePassword() {
     userChoices = special;
     console.log(userChoices);
   };
-var passwordBlank = [];
-for (var i = 0; i < passwordLength; i++) {
+  var passwordBlank = [];
+  for (var i = 0; i < passwordLength; i++) {
   var allChoices = userChoices[Math.floor(Math.random() * userChoices.length)];
   passwordBlank.push(allChoices);
   console.log(allChoices);
-}
-var password = passwordBlank.join("");
-console.log("Your password is: " + password);
-return password;
-
+  }
+  var password = passwordBlank.join("");
+  console.log("Your password is: " + password);
+  return password;
 }
